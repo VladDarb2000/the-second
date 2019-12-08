@@ -1,4 +1,4 @@
-//Copyright 2019 <mmeshcher>
+//Copyright 2019 <VladDarb2000>
 
 #include <iostream>
 #include <chrono>
