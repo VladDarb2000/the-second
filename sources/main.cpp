@@ -9,7 +9,7 @@
 
 #define MB 1024 * 1024
 
-static unsigned int seed ;
+static unsigned int seed;
 
 enum Type
 {
