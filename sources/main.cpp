@@ -128,21 +128,19 @@ void StartLoop(double size, int count, int type)
 
 int main() {
     int i;
-    std :: cout<<"Введите количество уровней кэша";
-    std :: cin>>i;
+    std :: cout << "Введите количество уровней кэша";
+    std :: cin >> i;
     const int t = i+2;
-    std :: vector<double>cache_size (t);
-    //double cache_size [t];
-    for(int k=1; k<=i; k++){
-        std :: cout<<"№"<<k<<"размер уровня равен = ";
-        std :: cin>> cache_size[k];
+    std :: vector<double>cache_size(t);
+    for (int k=1; k <= i; k++){
+        std :: cout <<"№" << k << "размер уровня равен = ";
+        std :: cin >> cache_size[k];
     }
-    cache_size[0]=0.5*cache_size[1];
-    cache_size[i+1]=1.5*cache_size[i];
-    int cycles_count=i+2;
+    cache_size[0] = 0.5*cache_size[1];
+    cache_size[i+1] = 1.5*cache_size[i];
+    int cycles_count = i+2;
     for (int type = Direct; type != Unknown; type++)
     {
-
         std :: cout << ConvertType(type) << '\n';
         std :: cout << "======================" << '\n';
         for (int k = 0; k < i+2; k++)
