@@ -5,12 +5,11 @@
 #include <cstdlib>
 #include <ctime>
 #include <stdint.h>
-#include <stdlib.h>
 #include <vector>
 
 #define MB 1024 * 1024
 
-static unsigned int seed = 567898;
+static unsigned int seed ;
 
 enum Type
 {
